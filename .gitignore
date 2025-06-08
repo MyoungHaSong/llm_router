@@ -1,0 +1,49 @@
+# 빌드된 바이너리
+/bin/
+/dist/
+
+# Go 관련 무시 파일
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# 의존성 디렉토리
+/vendor/
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 로그 파일
+*.log
+
+# 환경 변수 파일
+.env
+.env.local
+
+# 테스트 커버리지 파일
+coverage.txt
+cover.out
+
+# OS 생성 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# 쿠버네티스/Helm 임시 파일
+kubeconfig
+*.tgz
+charts/*.tgz
