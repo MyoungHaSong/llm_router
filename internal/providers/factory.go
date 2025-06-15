@@ -17,6 +17,10 @@ func NewProviderFactory(apiKeys map[string]string) *ProviderFactory {
 		providers["openai"] = NewOpenAIProvider(apiKey)
 	}
 
+	if apiKey, ok := apiKeys["anthropic"]; ok {
+		providers["anthropic"] = NewAntropicProvider(apiKey)
+	}
+
 	return &ProviderFactory{
 		providers: providers}
 }
